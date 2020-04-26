@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-fluid, .container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.left {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #252526;
+}
+
+.left-menu {
+    width: 50px;
+    background: #333333;
+    height: 100vh;
+    float: left;
+}
+
+.left-menu button {
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #858585;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: center;
+    transition: .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.left-menu li button:hover, #leftMenu li button.active {
+    color: white;
+    border-left: 2px solid #fff;
+}
+
+.left-user-container {
+    width: calc(100% - 50px);
+    height: 100vh;
+    color: #858585;
+    padding: 10px;
+    float: right;
+    padding-top: 40px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+}
+
+.left-user-container::-webkit-scrollbar {
+    display: none;
+}
+
+.right {
+    width: calc(100% - 300px);
+    float: right;
+    background-color: #1E1E1E;
+    height: 100vh;
+}
+
+.top-menu {
+    width: 100%;
+    height: 40px;
+    padding: 9px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#routerElements {
+    padding: 20px;
+    color: #7F8585;
+}
+
+#routerElements>div {
+    margin-bottom: 15px;
+}
+
+.error, .error h1, .error h2, .error h3, .error h4 {
+    color: red;
+    opacity: .9;
+}
+
+.form-header {
+    opacity: .9;
+}
+
+#userList {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#userList li {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+#userList li .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: inset 0 0 7px;
+    opacity: .9;
+    transition: .5s linear;
+    font-size: 1.3em;
+}
+
+#userList li:hover .user-img, #userList li.active .user-img {
+    opacity: 1;
+    border: 1px solid #ccc;
+    color: white;
+}
+
+#userList .user-content {
+    width: calc(100% - 50px);
+    float: right;
+    padding: 8px;
+    padding-left: 15px;
+}
+
+.loggedin-status {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: green;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    transform: translateY(-50%);
+}
+
+.log-out-btn {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    color: #858585;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    padding: 4px 5px;
+}
+
+.log-out-btn:hover {
+    box-shadow: 2px 2px 5px #000;
+}
+
+#activeReciever {
+    width: 9px;
+    height: 9px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 5px black;
+}

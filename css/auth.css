@@ -1,0 +1,45 @@
+.lgbd {
+    background-color: #242424;
+}
+
+#logInForm {
+    width: 280px;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 0 0 5px #ccc;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+
+#logInForm input, #logInForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#logInForm input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: .7;
+}
+
+#logInForm input[type="submit"] {
+    width: auto;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#logInForm input:hover, #logInForm input:focus {
+    opacity: .9;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}

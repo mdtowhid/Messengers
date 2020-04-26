@@ -1,0 +1,91 @@
+#messagesWrapper {
+    width: 400px;
+    height: 70vh;
+    margin: 0 auto;
+    display: block !important;
+    position: relative;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+#messages {
+    padding: 10px;
+    height: calc(100% - 75px);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#messages::-webkit-scrollbar {
+    display: none;
+}
+
+#messageForm {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 10px;
+    background: #1E1E1E;
+    border: 1.5px solid #333333;
+}
+
+#messageForm input {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 0 5px #333333;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#messageForm input[type="text"] {
+    padding: 5px;
+    width: calc(100% - 70px);
+    border-radius: 16px;
+    padding-left: 15px;
+    color: #858585;
+}
+
+#sentBoxBtn {
+    padding: 5px;
+    width: 65px;
+    color: white;
+    cursor: pointer;
+}
+
+.me {
+    background: black;
+    padding: 10px;
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    float: right;
+}
+
+.me .time {
+    text-align: right;
+}
+
+.sender-msg, .receiver-msg {
+    max-width: 300px;
+    float: right;
+    text-align: justify;
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #7F8585;
+    box-shadow: inset 0 0 5px;
+}
+
+.receiver-msg {
+    float: left;
+}
+
+.user-messanger-header {
+    padding: 10px;
+    border-bottom: 1.6px solid #2e2e2e;
+}
